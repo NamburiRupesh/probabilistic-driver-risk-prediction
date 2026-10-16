@@ -75,14 +75,14 @@ The notebook models the relationship between these variables:
 | `DriverState` | Detected driver behaviour/state | `SafeDriving`, `Distracted`, `Drinking`, `SleepyDriving`, `Yawn`, `DangerousDriving` |
 | `Weather` | Context input | `Clear`, `Rainy`, `Foggy` |
 | `Traffic` | Context input | `Low`, `Medium`, `Heavy` |
-| `Speed` | Context input | Use the categories supported by the CSV and notebook |
+| `Speed` | Context input | `Normal`, `High` |
 | `Risk` | Predicted target | `Low`, `Medium`, `High` |
 
 The network estimates:
 
-\[
+$$
 P(\text{Risk} \mid \text{DriverState}, \text{Weather}, \text{Traffic}, \text{Speed})
-\]
+$$
 
 A risk prediction is produced by comparing the posterior probabilities of the three risk classes.
 
