@@ -202,6 +202,3 @@ Run the notebook cells from top to bottom.
 - Calibrate predicted probabilities and assess performance across risk classes.
 - Add temporal modelling if implementing a Dynamic Bayesian Network.
 
-## Acknowledgements
-
-This project uses YOLO-based object detection and `pgmpy` for probabilistic graphical modelling. Please cite or acknowledge the relevant libraries and any third-party datasets according to their licenses and terms.
